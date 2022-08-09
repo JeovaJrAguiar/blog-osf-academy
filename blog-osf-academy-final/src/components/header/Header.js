@@ -2,9 +2,9 @@ import * as S from './Header.style';
 
 function Header(){
     return (
-        <S.Header>
+        <S.HeaderBlog>
             <h1>Teste header</h1>
-        </S.Header>
+        </S.HeaderBlog>
     );
 }
 
