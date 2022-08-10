@@ -1,12 +1,10 @@
 import * as S from './Header.style';
 
-function Header(){
+function Header({ name }){
     return (
         <S.Header>
-            <h1 id='titleBlog'>My Blog</h1>
-            {
-                // Adicionar o componente usuario aqui
-            }
+            <span id='titleBlog'>My Blog</span>
+            <span id='userName'>{ name }</span>
         </S.Header>
     );
 }

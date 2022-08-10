@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
 export const Header = styled.header`
-    background-color: #33CC95;
+    background-color: #1E89EB;
     color: #fff;
 
     margin-top: 0px;
-    padding: 0% 5% 0%;
+    padding: 15px 60px;
 
     position: relative;
     box-shadow: 0px 2px 15px #000;
@@ -18,7 +18,19 @@ export const Header = styled.header`
         font-weight: 300;
         font-size: 40px;
 
-        height: 50%;
-        width: 20%;
+        height: 60px;
+        width: 120px;
+    }
+
+    #userName{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 300;
+        font-size: 25px;
+
+        color: #fff;
+
+        margin-left: 80%;
+        height: 60px;
+        width: 120px;
     }
 `;
