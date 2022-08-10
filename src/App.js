@@ -19,7 +19,6 @@ function App() {
     <>
         <Header name = "Aguiar"/>
         <Main/>
-        <CreatePost/>
         <Footer/>
     </>
   );

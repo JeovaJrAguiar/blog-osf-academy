@@ -3,14 +3,12 @@ import styled from 'styled-components'
 export const Footer = styled.footer`
     background-color: #737272;
     color: #fff;
+    text-align: left;
 
-    margin-bottom: 5px;
-    padding-left: 5%;
-    padding-right: 5%;
+    margin-bottom: 0px;
+    padding: 5px 0px;
 
     position: relative;
-    height: 10%;
-    width: 100%;
 
 
     #footerBlog{

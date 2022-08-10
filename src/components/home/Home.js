@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import usePosts from "../../hooks/usePosts";
 import TextContainer from "../textContainer/TextContainer";
+import * as S from './Home.style';
 
 function Home() {
   const navigate = useNavigate();
@@ -8,17 +9,12 @@ function Home() {
   const posts = usePosts();
 
   return (
-    <>
+    <S.Home>
       <Link to="create-post">
         <p>vai para a criacao de posts</p>
       </Link>
-      <button
-        onClick={() => {
-          navigate("/create-post");
-        }}
-      >
-        criar post
-      </button>
+
+    <button id='buttonNewPost' onClick={() => {navigate("/create-post");}}>Add new post</button>
 
       {posts.map((post) => (
         <TextContainer
@@ -28,7 +24,7 @@ function Home() {
           description={post.teaser}
         />
       ))}
-    </>
+    </S.Home>
   );
 }
 
