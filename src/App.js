@@ -15,10 +15,10 @@ function App() {
   const user = useUser();
   const posts = usePosts();
 
-  // <Main posts = {posts}/>
   return (
     <>
         <Header name = "Aguiar"/>
+        <Main/>
         <CreatePost/>
         <Footer/>
     </>

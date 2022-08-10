@@ -1,13 +1,21 @@
 import * as S from './Main.style'
 import { useEffect,  useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-function Main({ children }){
-    const [main, setMain] = useState([]);
+import CreatePost from '../createPost/CreatePost';
+import Home from '../home/Home';
+
+function Main(){
 
     return (
         <S.Main>
-            <h1>Posts Recentes</h1>
-            {children}
+            <BrowserRouter>
+                <Routes>
+                    <Route index element={<Home/>}/>
+                    <Route path='create-post' element={<CreatePost/>}/>
+                    <Route path='post-details/:id' element={<CreatePost/>}/>
+                </Routes>
+            </BrowserRouter>
         </S.Main>
     )
 }

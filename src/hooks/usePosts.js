@@ -6,7 +6,7 @@ const usePosts = () => {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        axios.get(endpoints.getUsers)
+        axios.get(endpoints.getPosts)
             .then(
                 result => (setPosts(result.data))
             )

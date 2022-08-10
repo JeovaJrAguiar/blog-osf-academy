@@ -1,11 +1,11 @@
 import { useEffect, useState } from 'react';
-import * as S from './CreatePost.style';
+import * as S from './CreateComment.style';
 
-function CreatePost() {
+function CreateComment() {
     const [title, setTitle] = useState();
 
     return (
-        <S.CreatePost>
+        <S.CreateComment>
             <h1 id='titlePage'>Create a Comment</h1>
             <span>Tittle</span>
             <input id='inputTitle' placeholder='Type here...'></input>
@@ -14,7 +14,7 @@ function CreatePost() {
             <textarea id='inputComment' placeholder='Type here...'></textarea>
 
             <input id='inputEnviar'type='submit'></input>
-        </S.CreatePost>
+        </S.CreateComment>
     );
 }
 
