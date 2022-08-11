@@ -4,7 +4,7 @@ function Footer(){
     return (
         <>
             <S.Footer>
-                <p id='footerBlog'>testando footer</p>
+                <p id='footerBlog'>Blog OSF Academy Julho 2022</p>
             </S.Footer>
         </>
     )
