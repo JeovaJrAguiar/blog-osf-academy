@@ -10,10 +10,6 @@ function Home() {
 
   return (
     <S.Home>
-      <Link to="create-post">
-        <p>vai para a criacao de posts</p>
-      </Link>
-
     <button id='buttonNewPost' onClick={() => {navigate("/create-post");}}>Add new post</button>
 
       {posts.map((post) => (
