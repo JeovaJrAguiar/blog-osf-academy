@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import * as S from './TextContainer.style'
 
-function TextContainer({ title, author, description }) {
+function TextContainer({ title, author, description , id}) {
 
     return (
         <>
         <S.TextContainer>
-            <Link className='classTitleTextContainer' to="create-post">
+            <Link className='classTitleTextContainer' to={`post-details/${id}`}>
                 <h2 >{title}</h2>
             </Link>
 

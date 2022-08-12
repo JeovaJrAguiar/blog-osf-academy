@@ -13,12 +13,11 @@ import usePosts from './hooks/usePosts';
 function App() {
 
   const user = useUser();
-  const posts = usePosts();
 
   return (
     <>
-        <Header name = "Aguiar"/>
-        <Main/>
+        <Header name = {user.name}/>
+        <Main user={user}/>
         <Footer/>
     </>
   );

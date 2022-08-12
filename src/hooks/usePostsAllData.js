@@ -3,14 +3,17 @@ import { useEffect, useState } from "react";
 import endpoints from "../config/endpoints";
 
 const usePostsAllData = (idPost) => {
-    const [posts, setPosts] = useState([]);
+  const [posts, setPosts] = useState([]);
 
-    useEffect(() => {
-        axios.get(endpoints.getPostAllData, {params: {id: idPost}})
-            .then( result => (setPosts( result.data )))
-    }, []);
+  useEffect(
+    () => {
+      axios
+        .get(endpoints.getPostAllData(idPost))
+        .then((result) => setPosts(result.data))},
+    []
+  );
 
-    return posts;
-}
+  return posts;
+};
 
 export default usePostsAllData;
