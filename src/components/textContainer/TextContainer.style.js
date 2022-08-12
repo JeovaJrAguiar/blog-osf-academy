@@ -16,6 +16,12 @@ export const TextContainer = styled.div`
         color: #000;
         text-decoration: none;
     }
+    #divTittleAndAuthor{
+        display: flex;
+    }
+    #byAuthor{
+        padding-top: 10px;
+    }
 
     .classAuthorTextContainer{
         font-family: Verdana, Geneva, Tahoma, sans-serif;

@@ -1,22 +1,22 @@
 import { Link } from "react-router-dom";
-import * as S from './TextContainer.style'
+import * as S from "./TextContainer.style";
 
-function TextContainer({ title, author, description , id}) {
+function TextContainer({ title, author, description, id }) {
+  return (
+    <>
+      <S.TextContainer>
+        <div id="divTittleAndAuthor">
+          <Link className="classTitleTextContainer" to={`post-details/${id}`}>
+            <h2>{title}</h2>
+          </Link>
 
-    return (
-        <>
-        <S.TextContainer>
-            <Link className='classTitleTextContainer' to={`post-details/${id}`}>
-                <h2 >{title}</h2>
-            </Link>
-
-            <p className='classAuthorTextContainer'>· by {author}</p>
-            <p>{description}</p>
-            
-        </S.TextContainer>
-        <hr/>
-        </>
-    )
+          <p id="byAuthor" className="classAuthorTextContainer">· by {author}</p>
+        </div>
+        <p>{description}</p>
+      </S.TextContainer>
+      <hr />
+    </>
+  );
 }
 
 export default TextContainer;

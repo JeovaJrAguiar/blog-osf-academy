@@ -19,7 +19,7 @@ export const Header = styled.header`
         font-size: 40px;
 
         height: 60px;
-        width: 120px;
+        //width: 120px;
     }
 
     #userName{
@@ -28,9 +28,13 @@ export const Header = styled.header`
         font-size: 25px;
 
         color: #fff;
-
-        margin-left: 80%;
+        
+        //margin-left: 80%;
         height: 60px;
         width: 120px;
+    }
+    #teste{
+        display: flex;
+        gap: 1100px;
     }
 `;

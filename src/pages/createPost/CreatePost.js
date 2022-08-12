@@ -55,7 +55,7 @@ function CreatePost({ userId }) {
               })
             );
           }}
-          id="inputComment"
+          id="inputContent"
           placeholder="Type here..."
         />
       ))}

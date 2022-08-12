@@ -6,7 +6,8 @@ export const Home = styled.div`
     #divTittleHome{
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 500;    
-        display: block;
+        display: flex;
+        gap: 68.75rem;
     }
 
 

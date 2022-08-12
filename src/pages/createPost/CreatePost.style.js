@@ -22,9 +22,9 @@ export const CreatePost = styled.form`
         border-radius: 3px;
     }
 
-    #inputComment{
+    #inputTeaser, #inputContent{
         width: 100%;
-        height: 200px;
+        height: 70px;
 
         margin-top: 10px;
         margin-bottom: 10px;
