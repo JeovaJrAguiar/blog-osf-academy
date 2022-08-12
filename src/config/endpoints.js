@@ -5,7 +5,7 @@ const endpoints = {
     getPosts: `${host}/api/posts`, // return all posts
     getPostAllData: (id) => `${host}/api/posts/${id}`,
 
-    postComment: `${host}/api/comments`,
+    createComment: `${host}/api/comments`,
     createPost: `${host}/api/posts`
 };
 

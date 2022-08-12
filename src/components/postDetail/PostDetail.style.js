@@ -13,4 +13,33 @@ export const PostDetail = styled.div`
     #divDetailsPostComments{
         padding: 10px;
     }
+
+    #divComments{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 500;    
+        display: flex;
+        gap: 68.75rem;
+    }
+
+    #buttonNewComment{
+        background-color: #1E89EB;
+        color: #fff;
+
+        height: 50px;
+        width: 10%;
+
+        font-size: 15px;
+        margin-right: 0px;    
+        display: inline;
+    }
+
+    #idtitle{
+        
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+
+        color: #1E89EB;
+        padding: 10px 1px;
+    }
 `;
